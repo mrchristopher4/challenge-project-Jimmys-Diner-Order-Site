@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <title>Jimmy's Diner</title>
+    </head>
+
+    <body>
+        <header class="banner">
+            <div class="banner-text">        
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+
+        <main>
+            <section class="menu" id="menu">
+
+            </section>
+
+            <div class="container-checkout" id="containerCheckout">
+                <p>Your Order</p>
+                <div class="items-checkout-display" id="itemsCheckoutDisplay">
+
+                </div>
+                <div class="checkout-total" id="checkoutTotal">
+
+                </div>
+                <button id="btnCompleteOrder">Complete Order</button>
+            </div>
+
+            <div class="modal" id="modal">
+                <h2>Enter Card Details</h2>
+                <form>
+                    <input 
+                        required 
+                        type="text" 
+                        id="cardholderName" 
+                        name="cardholderName" 
+                        minlength="2" 
+                        pattern="[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+" 
+                        placeholder="Enter your name"
+                        />
+                    <input 
+                        required 
+                        type="number" 
+                        id="cardNumber" 
+                        name="cardNumber" 
+                        minlength="16" 
+                        maxlength="16"
+                        pattern="[1-9]{16}" 
+                        placeholder="Enter card number"
+                    />
+                    <input 
+                        required 
+                        type="number" 
+                        id="cardCvv" 
+                        name="cardCvv" 
+                        minlength="3" 
+                        maxlength="3"
+                        pattern="[1-9]{3}" 
+                        placeholder="Enter CVV"
+                    />
+                    <button id="btnPay">Pay</button>
+                </form>
+            </div>
+
+            <div class="confirm-message" id="confirmMessage">
+                <p>Thanks, CUSTOMER NAME! Your order is on its way!</p>
+            </div>
+        
+        </main>
+
+	    <script src="index.js" type="module"></script>
+    </body>
+
+</html>
+

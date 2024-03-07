@@ -1,0 +1,78 @@
+.smythe-regular {
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Smythe', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner {
+    background-image: url("images/ferks-guare-KEZdWfYD-ow-unsplash1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    
+    display: flex;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.checkout-item {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.checkout-total {
+    display: flex;
+    /* justify-content: space-between; */
+
+    /*border-top: 10px black;*/
+}
+
+input {
+    display: block;
+}
+
+.btn-add-to-cart {
+    border-color: #DEDEDE;
+    border-radius: 30px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.img-food {
+    height: 100px;
+    width: 100px;
+}
+
+.modal {
+    display: none;
+    
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+
+    text-align: center;
+}
+
+.confirm-message {
+    display: none;
+}
